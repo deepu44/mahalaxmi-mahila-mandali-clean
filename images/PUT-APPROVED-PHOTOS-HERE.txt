@@ -1,0 +1,2 @@
+Place organization.jpg and old-age-home.jpg here.
+Gallery images go in images/gallery/.
