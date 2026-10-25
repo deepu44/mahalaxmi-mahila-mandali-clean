@@ -217,3 +217,43 @@ tr:last-child td{border-bottom:0}
 .logo-fallback {
     display: none !important;
 }
+
+
+
+/* Team member image sizing */
+.team-page .team-avatar {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-page .team-avatar img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Keep member details below the image */
+.team-page .team-card h3,
+.team-page .team-card .team-role,
+.team-page .team-card p:not(.team-role) {
+  position: static;
+  clear: both;
+  overflow-wrap: break-word;
+}
+
+/* Responsive sizing */
+@media (max-width: 600px) {
+  .team-page .team-avatar {
+    max-width: 400px;
+    height: 280px;
+  }
+}
